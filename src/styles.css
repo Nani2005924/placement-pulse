@@ -4,6 +4,42 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-heading: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #0f172a;
+  --color-navy-light: #1e293b;
+
+  --color-super-dream: #7c3aed;
+  --color-dream: #2563eb;
+  --color-standard: #16a34a;
+  --color-regular: #d97706;
+
+  --color-bloom-cu: #3b82f6;
+  --color-bloom-ap: #22c55e;
+  --color-bloom-as: #eab308;
+  --color-bloom-ev: #ef4444;
+  --color-bloom-cr: #a855f7;
+
+  --color-crit-critical: #dc2626;
+  --color-crit-important: #d97706;
+  --color-crit-baseline: #475569;
+
+  --color-app-sidebar-bg: #f8fafc;
+  --color-app-sidebar-border: #e5e7eb;
+  --color-app-sidebar-fg: #334155;
+  --color-app-sidebar-active-bg: #eff6ff;
+  --color-app-sidebar-active-fg: #2563eb;
+
+  --animate-glow: glow 2s ease-in-out infinite;
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5); }
+    50% { box-shadow: 0 0 0 8px rgba(37, 99, 235, 0); }
+  }
+}
+
 /*
  * Design system definition.
  *
